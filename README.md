@@ -1,3 +1,13 @@
+# Changes i have done to original repository 
+1) Dealing with some installation issues
+2) Added code to integrate with carla and autoware to publish messages accordingly.
+3) Modified ros stereo to accomplish the following  
+    1) To subscribe to image and GNSS topics.
+    2) To publish the localized position information.
+    3) To use GNSS to correct the position. This is done because the error gets adds up from previous iteration and increases drastically. To mitigate that i used the GNSS to correct the position and estimate it from there. Which worked decently but not so good for practical purposes.
+
+# Original Documentation
+
 # ORB-SLAM2
 **Authors:** [Raul Mur-Artal](http://webdiis.unizar.es/~raulmur/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/), [J. M. M. Montiel](http://webdiis.unizar.es/~josemari/) and [Dorian Galvez-Lopez](http://doriangalvez.com/) ([DBoW2](https://github.com/dorian3d/DBoW2))
 
